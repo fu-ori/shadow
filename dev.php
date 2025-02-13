@@ -18,7 +18,7 @@
 <body>
 	<?php 
 
-	include "plasma/hello-world.php";
+	include "plasma/form-mail.php";
 
 	?>
 </body>
