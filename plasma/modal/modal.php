@@ -22,11 +22,11 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title is-super">modal</h1>
-            <a class="button is-info is-rounded" onclick="openContact()">open modal</a>
+            <a class="button is-info is-rounded" onclick="openModal()">open modal</a>
         </div>
     </div>
 </section>
 
 <script type="text/javascript">
-    function openContact() { $("#modal-example").fadeIn(); }
+    function openModal() { $("#modal-example").fadeIn(); }
 </script>
