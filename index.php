@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>shadow</title>
 
-	<?php include "soul/cdn.php" ?>
+	<?php 
+
+	include "soul/default.php";
+	include "soul/cdn.php" 
+
+	?>
 	<link rel="stylesheet" href="design.css">
 </head>
 

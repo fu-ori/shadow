@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- shadow configs-->
 <head>
 	<title>shadow</title>
 
@@ -18,14 +16,12 @@
 <body>
 	<?php 
 
-	include "plasma/form-mail.php";
+	include "plasma/modal/modal.php";
 
 	?>
 </body>
 
 <!-- shadow scripts -->
-<script type="text/javascript">
-	
-</script>
+<script type="text/javascript" src="plasma/plasma.js"></script>
 
 </html>
