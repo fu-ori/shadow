@@ -34,7 +34,7 @@ CUSTOM COLORS
 	color: #616161 !important;
 }
 ::selection {
-	background: greenyellow;
+	background: grey;
 }
 
 /*********************************************
@@ -73,7 +73,7 @@ MODAL
 }
 .modal-content {
 	background-color: #fefefe;
-	margin: 5% auto;
+	margin: 20% auto;
 	border-radius: 30px;
 	padding: 40px;
 	width: 30%;

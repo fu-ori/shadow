@@ -27,6 +27,7 @@
     </div>
 </section>
 
+<!-- custom script -->
 <script type="text/javascript">
     function openModal() { $("#modal-example").fadeIn(); }
 </script>

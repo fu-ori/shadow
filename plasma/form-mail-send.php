@@ -3,42 +3,30 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $from = "amper@fuoricorp.com"; // Seu e-mail de envio
-    $to = "yzbruno@gmail.com"; // Destinatário
-
-    $subject = "Novo Cadastro - Formulário";
+    $from = "dev@fuoricorp.com"; 
+    $to = "yzbruno@gmail.com";
+    $subject = "Shadow";
     
-    // Capturando os dados do formulário
-    $nome = $_POST['nome'];
+    // capturando os dados do formulário
+    $name = $_POST['name'];
     $email = $_POST['email'];
-    $celular = $_POST['celular'];
-    $instituicao = $_POST['instituicao'];
-    $pais = $_POST['pais'];
-    $cidade = $_POST['cidade'];
-    $cargo = $_POST['cargo'];
     $newsletter = isset($_POST['newsletter']) ? $_POST['newsletter'] : 'Não informado';
 
-    // Criando a mensagem do e-mail
-    $message = "FORUM BPG - Novo cadastro recebido:\n\n";
-    $message .= "Nome: $nome\n";
+    // criando a mensagem do e-mail
+    $message = "Mailing received:\n\n";
+    $message .= "Name: $nome\n";
     $message .= "E-mail: $email\n";
-    $message .= "Celular: $celular\n";
-    $message .= "Instituição: $instituicao\n";
-    $message .= "País: $pais\n";
-    $message .= "Cidade: $cidade\n";
-    $message .= "Cargo: $cargo\n";
-    $message .= "Aceita receber e-mails? $newsletter\n";
+    $message .= "Like a newsletter? $newsletter\n";
 
-    // Cabeçalhos do e-mail
     $headers = "From: " . $from . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    // Envio do e-mail
+    // envio do e-mail
     if (mail($to, $subject, $message, $headers)) {
         
     } else {
-        echo "Erro ao enviar o e-mail.";
+        echo "Error!";
     }
 }
 ?>
@@ -67,6 +55,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!-- ui -->
 <section class="thankyou">
-    <img src="form-mail-thankyou.svg">
-    <h1>Cadastro efetuado com sucesso.</h1>
+    <h1>Data Sent!</h1>
 </section>

@@ -1,26 +1,39 @@
-<!-- custom css -->
-<style type="text/css">
-	body {
-		background-image: linear-gradient(to bottom, #fff, #616161);
-	}
-	p, ul{
-		color: #86efac;
-	}
-</style>
-
-<!-- ui -->
-<section class="hero is-fullheight">
-	<div class="hero-body">
-		<div class="container">
-			<i class="ph-fill ph-smiley-blank dark-color" style="font-size: 150px;"></i>
-			<h1 class="title is-super">Hello World</h1>
-			<h1 class="subtitle is-5">plasma is a package of codes</h1>
-			<p>Good tools that you can use</p>
-			<ul>
-				<li>- bulma.css</li>
-				<li>- phosphor icons</li>
-				<li>- three.js</li>
-			</ul>
-		</div>
+<div class="fuori">
+		<img src="fuori-light.svg">
 	</div>
-</section>
+	<script>
+    // Cena
+		const scene = new THREE.Scene();
+
+    // Câmera
+		const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    // Renderizador
+		const renderer = new THREE.WebGLRenderer();
+		renderer.setSize(window.innerWidth, window.innerHeight);
+		document.body.appendChild(renderer.domElement);
+
+    // Cubo
+		const geometry = new THREE.BoxGeometry();
+		const material = new THREE.MeshBasicMaterial({ color: 0x86efac });
+		const cube = new THREE.Mesh(geometry, material);
+		scene.add(cube);
+
+    // Posição da câmera
+		camera.position.z = 5;
+
+    // Função de animação
+		function animate() {
+			requestAnimationFrame(animate);
+
+      // Rotação do cubo
+			cube.rotation.x += 0.01;
+			cube.rotation.y += 0.01;
+
+      // Renderizar a cena
+			renderer.render(scene, camera);
+			renderer.setClearColor(0x616161); // Azul
+		}
+
+		animate();
+	</script>
