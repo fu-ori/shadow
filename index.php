@@ -4,7 +4,7 @@
 <head>
 
 	<!-- ███████████████████████████████████████████████████████████████ SEO -->
-	<title>shadow</title>
+	<title>shadow v0.6</title>
 
 	<!-- ███████████████████████████████████████████████████████████████ SOUL ENGINE -->
 	<?php include "soul/soul.php" ?>
@@ -23,7 +23,7 @@
 </body>
 
 <!-- ███████████████████████████████████████████████████████████████ JS SCRIPTS -->
-<script type="text/javascript" src="plasma/plasma.js"></script>
+<script type="text/javascript" src="soul/soul.js"></script>
 <script type="text/javascript">
 	
 	// your scripts

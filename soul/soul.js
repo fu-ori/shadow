@@ -1,4 +1,4 @@
-// plasma/modal
+// modal
 document.querySelector(".close").addEventListener("click", function () {
     $(".modal").fadeOut();
 });
