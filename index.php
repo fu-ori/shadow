@@ -20,14 +20,13 @@
 
 	?>
 
-</body>
-
-<!-- ███████████████████████████████████████████████████████████████ JS SCRIPTS -->
-<script type="text/javascript" src="soul/soul.js"></script>
-<script type="text/javascript">
-	
+	<!-- ███████████████████████████████████████████████████████████████ JS SCRIPTS -->
+	<script type="text/javascript" src="soul/soul.js"></script>
+	<script type="text/javascript">
+		
 	// your scripts
-	
-</script>
+		
+	</script>
+</body>
 
 </html>

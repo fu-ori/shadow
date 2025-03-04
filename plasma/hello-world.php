@@ -9,12 +9,12 @@
 	renderer.setSize(window.innerWidth, window.innerHeight);
 	document.body.appendChild(renderer.domElement);
 
-	const light = new THREE.PointLight(0xffffb3, 3, 100);
+	const light = new THREE.PointLight(0xffffff, 4, 100);
 	light.position.set(1, 1, 10);
 	scene.add(light);
 
 	const geometry = new THREE.BoxGeometry();
-	const material = new THREE.MeshStandardMaterial({ color: 0x333333, roughness: 0.1, metalness: 0.5 });
+	const material = new THREE.MeshStandardMaterial({ color: 0x3a3a3a, roughness: 0.1, metalness: 0.5 });
 	const cube = new THREE.Mesh(geometry, material);
 	scene.add(cube);
 
